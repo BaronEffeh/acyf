@@ -1,17 +1,20 @@
 import React from "react";
 import { Box, Typography, Grid, Card, CardMedia, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import FeaturedImg1 from "../../assets/images/featured1.jpg";
+import FeaturedImg2 from "../../assets/images/featured2.jpg";
+import FeaturedImg3 from "../../assets/images/featured3.jpg";
 
 const featuredImages = [
-  "/assets/images/elijah.jpg",
-  "/assets/images/workshop1.jpg",
-  "/assets/images/outreach1.jpg",
+  FeaturedImg1,
+  FeaturedImg2,
+  FeaturedImg3,
 ];
 
 function FeaturedGallery() {
   return (
     <Box sx={{ my: 5, px: 2, textAlign: "center" }}>
-      <Typography variant="h4" textAlign="center" gutterBottom>
+      <Typography variant="h4" textAlign="center" gutterBottom color="primary">
         Featured Moments
       </Typography>
       <Grid container spacing={2}>

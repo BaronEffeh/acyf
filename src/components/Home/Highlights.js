@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Grid, Typography, Paper } from "@mui/material";
+import { Box, Button, Grid, Typography, Paper } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
 import PeopleIcon from "@mui/icons-material/People";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+import { Link } from "react-router-dom";
 
 const highlights = [
   {
@@ -24,7 +25,7 @@ const highlights = [
 
 function Highlights() {
   return (
-    <Box sx={{ py: 5, px: 2, backgroundColor: "#f5f5f5" }}>
+    <Box sx={{ py: 5, px: 2, backgroundColor: "#f5f5f5", justifyItems: "center" }}>
       <Typography variant="h4" textAlign="center" gutterBottom>
         Why Join Us?
       </Typography>
@@ -43,6 +44,9 @@ function Highlights() {
           </Grid>
         ))}
       </Grid>
+      <Button variant="contained" component={Link} to="/join-us" sx={{mt: "1rem"}}>
+        Join Us
+      </Button>
     </Box>
   );
 }

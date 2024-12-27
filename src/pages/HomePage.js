@@ -6,12 +6,15 @@ import Review from "../components/Home/Review";
 import Highlights from "../components/Home/Highlights";
 import Intro from "../components/Home/Intro";
 import FeaturedGallery from "../components/Home/FeaturedGallery";
+import HomeOverview from "../components/Home/HomeOverview";
 
 function HomePage() {
   return (
     <>
       <Intro />
     <Container>
+
+      <HomeOverview />
 
       <FeaturedGallery />
 
