@@ -26,7 +26,7 @@ const highlights = [
 function Highlights() {
   return (
     <Box sx={{ py: 5, px: 2, backgroundColor: "#f5f5f5", justifyItems: "center" }}>
-      <Typography variant="h4" textAlign="center" gutterBottom>
+      <Typography variant="h4" textAlign="center" gutterBottom color="primary">
         Why Join Us?
       </Typography>
       <Grid container spacing={4}>

@@ -11,7 +11,7 @@ function Milestone() {
 
   return (
     <Box sx={{ my: 5, px: 2, textAlign: "center" }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom color="primary">
         Our Milestones
       </Typography>
       <Grid container spacing={4} justifyContent="center">

@@ -65,7 +65,7 @@ function Review() {
 
   return (
     <Box sx={{ my: 5, px: 2 }}>
-      <Typography variant="h4" textAlign="center" gutterBottom>
+      <Typography variant="h4" textAlign="center" gutterBottom color="primary">
         What People Are Saying
       </Typography>
       <Slider {...settings}>

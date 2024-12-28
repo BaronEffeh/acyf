@@ -14,7 +14,7 @@ const team = [
 function OurTeam() {
   return (
     <Box sx={{ my: 5, px: 2, textAlign: "center" }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom color="primary">
         Meet Our Team
       </Typography>
       <Grid container spacing={4} justifyContent="center">
