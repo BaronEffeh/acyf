@@ -15,6 +15,7 @@ import {
   FormControl,
   Pagination,
 } from "@mui/material";
+import Highlights from "../components/Home/Highlights";
 
 function OurTeam({ teamMembers }) {
   const [open, setOpen] = useState(false);
@@ -250,6 +251,8 @@ function OurTeam({ teamMembers }) {
           )}
         </Box>
       </Modal>
+
+      <Highlights />
     </Box>
   );
 }
