@@ -45,6 +45,9 @@ function Review() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    aytoplayspeed: 3000,
+    pauseOnHover: true,
     prevArrow: <Arrow direction="left" />,
     nextArrow: <Arrow direction="right" />,
     responsive: [
@@ -90,54 +93,3 @@ function Review() {
 }
 
 export default Review;
-
-
-
-
-
-// import React from "react";
-// import { Box, Grid, Typography, Paper } from "@mui/material";
-
-// const reviews = [
-//   {
-//     name: "Alice Johnson",
-//     feedback: "Attending the conference was life-changing! I felt spiritually renewed.",
-//   },
-//   {
-//     name: "Michael Lee",
-//     feedback: "The events are so well-organized, and the team is truly inspiring!",
-//   },
-//   {
-//     name: "Grace Adams",
-//     feedback: "I’ve met amazing people and grown in my faith through this forum.",
-//   },
-// ];
-
-// function Review() {
-//   return (
-//     <Box sx={{ my: 5, px: 2 }}>
-//       <Typography variant="h4" textAlign="center" gutterBottom>
-//         What People Are Saying
-//       </Typography>
-//       <Grid container spacing={4}>
-//         {reviews.map((review, index) => (
-//           <Grid item key={index} xs={12} sm={6} md={4}>
-//             <Paper elevation={3} sx={{ p: 3 }}>
-//               <Typography variant="body1" sx={{ fontStyle: "italic" }}>
-//                 "{review.feedback}"
-//               </Typography>
-//               <Typography
-//                 variant="subtitle1"
-//                 sx={{ mt: 2, fontWeight: "bold", textAlign: "right" }}
-//               >
-//                 - {review.name}
-//               </Typography>
-//             </Paper>
-//           </Grid>
-//         ))}
-//       </Grid>
-//     </Box>
-//   );
-// }
-
-// export default Review;

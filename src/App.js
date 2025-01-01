@@ -13,6 +13,8 @@ import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import Gallery from "./pages/Gallery";
 import imageData from "./assets/galleryImgs/imageData";
+import OurTeam from "./pages/OurTeam";
+import { teamMembers } from "./assets/teamImgs/teamMembers";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/gallery" element={<Gallery data={imageData} />} />
+        <Route path="/our-team" element={<OurTeam teamMembers={teamMembers} />} />
       </Routes>
       <Footer />
     </Router>

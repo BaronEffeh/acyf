@@ -6,7 +6,7 @@ import Michelle from "../../assets/images/michelle.jpg";
 import { Link } from "react-router-dom";
 
 const team = [
-  { name: "Elijah Ejake", role: "Coordinator", image: Elijah },
+  { name: "Elijah Ajiake", role: "Coordinator", image: Elijah },
   { name: "Kefre Asuquo", role: "Secretary", image: Kufre },
   { name: "Michelle Michael", role: "Treasurer", image: Michelle },
 ];
