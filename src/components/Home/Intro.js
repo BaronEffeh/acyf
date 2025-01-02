@@ -53,7 +53,7 @@ function Intro() {
           variant="contained"
           color="primary"
           component={Link}
-          to="/register"
+          to="/register-conference"
         >
           Register for the 2025 Conference
         </Button>
