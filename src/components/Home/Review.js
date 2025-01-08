@@ -23,11 +23,11 @@ function Arrow({ className, style, onClick, direction }) {
       onClick={onClick}
       style={{
         ...style,
-        background: "rgba(0, 132, 255, 0.5)", // Semi-transparent background
+        background: "rgba(0, 132, 255, 0.5)",
         color: "white",
         borderRadius: "50%",
         padding: "10px",
-        zIndex: 2, // Ensure the arrow is above other elements
+        zIndex: 2,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

@@ -16,6 +16,8 @@ import imageData from "./assets/galleryImgs/imageData";
 import OurTeam from "./pages/OurTeam";
 import { teamMembers } from "./assets/teamImgs/teamMembers";
 import Registration from "./pages/Registration";
+import Donate from "./pages/Donate";
+import JoinUs from "./pages/JoinUs";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/gallery" element={<Gallery data={imageData} />} />
         <Route path="/our-team" element={<OurTeam teamMembers={teamMembers} />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/join-us" element={<JoinUs />} />
       </Routes>
       <Footer />
     </Router>

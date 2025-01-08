@@ -26,7 +26,6 @@ function HomePage() {
 
       <Review />
 
-      {/* </Box> */}
     </Container>
     </>
   );

@@ -1,9 +1,13 @@
 import React from "react";
 import { Typography, Box, Container } from "@mui/material";
+import AboutUsIntro from "../components/AboutUs/AboutUsIntro";
 
 function AboutUsPage() {
   return (
+    <>
+      <AboutUsIntro />
     <Container>
+
       <Typography variant="h4" gutterBottom>
         About Us
       </Typography>
@@ -20,6 +24,7 @@ function AboutUsPage() {
         </Typography>
       </Box>
     </Container>
+    </>
   );
 }
 

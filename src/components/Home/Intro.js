@@ -9,7 +9,7 @@ function Intro() {
       sx={{
         textAlign: "center",
         my: 0,
-        py: 5, // Padding for vertical spacing
+        py: 5,
         backgroundImage: `url(${BgImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -27,7 +27,7 @@ function Intro() {
             px: 5,
           position: "relative",
           top: "50%",
-          transform: "translateY(-50%)", // Vertically center the content
+          transform: "translateY(-50%)",
         }}
       >
         <Typography 

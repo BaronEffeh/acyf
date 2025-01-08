@@ -71,7 +71,7 @@ function Gallery({ data }) {
   return (
     <Container>
       <Box sx={{ my: 5 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
+        <Typography variant="h4" textAlign="center" color="primary" gutterBottom>
           Our Gallery
         </Typography>
 
@@ -106,7 +106,7 @@ function Gallery({ data }) {
           (section, sectionIndex) =>
             section.images.length > 0 && (
               <Box key={sectionIndex} sx={{ my: 4 }}>
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold", color: "#1976d2" }}>
                   {section.section}
                 </Typography>
                 <Grid container spacing={2}>
@@ -230,73 +230,3 @@ function Gallery({ data }) {
 }
 
 export default Gallery;
-
-
-
-
-
-
-// import React from "react";
-// import { Box, Typography, Grid, Card, CardMedia, Container } from "@mui/material";
-
-// const galleryData = [
-//   {
-//     section: "Conference Highlights",
-//     images: [
-//       "/assets/images/conference1.jpg",
-//       "/assets/images/conference2.jpg",
-//       "/assets/images/conference3.jpg",
-//     ],
-//   },
-//   {
-//     section: "Workshops",
-//     images: [
-//       "/assets/images/workshop1.jpg",
-//       "/assets/images/workshop2.jpg",
-//       "/assets/images/workshop3.jpg",
-//     ],
-//   },
-//   {
-//     section: "Community Outreach",
-//     images: [
-//       "/assets/images/outreach1.jpg",
-//       "/assets/images/outreach2.jpg",
-//       "/assets/images/outreach3.jpg",
-//     ],
-//   },
-// ];
-
-// function Gallery() {
-//   return (
-//     <Container>
-//     <Box sx={{ my: 5 }}>
-//       <Typography variant="h4" textAlign="center" gutterBottom>
-//         Our Gallery
-//       </Typography>
-//       {galleryData.map((section, index) => (
-//         <Box key={index} sx={{ my: 4 }}>
-//           <Typography variant="h5" gutterBottom>
-//             {section.section}
-//           </Typography>
-//           <Grid container spacing={2}>
-//             {section.images.map((image, idx) => (
-//               <Grid item xs={12} sm={6} md={4} key={idx}>
-//                 <Card>
-//                   <CardMedia
-//                     component="img"
-//                     height="200"
-//                     image={image}
-//                     alt={`${section.section} image ${idx + 1}`}
-//                   />
-//                 </Card>
-//               </Grid>
-//             ))}
-//           </Grid>
-//         </Box>
-//       ))}
-//     </Box>
-//     </Container>
-//   );
-// }
-
-// export default Gallery;

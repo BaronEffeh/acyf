@@ -62,7 +62,7 @@ function LandingPage({ onRegister }) {
 
       {/* Rules and Regulations Dialog */}
       <Dialog open={showRules} onClose={handleCloseRules} fullWidth maxWidth="sm">
-        <DialogTitle>Conference Rules and Regulations</DialogTitle>
+        <DialogTitle variant="h4">2025 Camp Rules and Regulations</DialogTitle>
         <DialogContent>
           <Typography variant="body1" sx={{ mb: 2 }}>
             1. Participants must adhere to the schedule of events. <br />
@@ -95,44 +95,3 @@ function LandingPage({ onRegister }) {
 }
 
 export default LandingPage;
-
-
-
-
-
-// import React from "react";
-// import { Box, Typography, Button } from "@mui/material";
-
-// function LandingPage({ onRegister }) {
-//   return (
-//     <Box sx={{ textAlign: "center", py: 6, px: 4, bgcolor: "#f8f8f8", height: "50vh" }}>
-//       <Typography
-//         variant="h3"
-//         color="primary"
-//         sx={{ fontWeight: "bold", mb: 2 }}
-//       >
-//         2025 ACYF Annual Conference:
-//       </Typography>
-//       <Typography variant="h5" sx={{ mb: 2 }}>
-//         The 11th Annual National Conference of the Abuja Christian Youth Forum
-//       </Typography>
-//       <Typography variant="body1" sx={{ mb: 4 }}>
-//         Please register to be a part of the event.
-//       </Typography>
-//       <Button
-//         variant="contained"
-//         color="primary"
-//         sx={{
-//           textTransform: "none",
-//           fontSize: "1rem",
-//           padding: "0.5rem 2rem",
-//         }}
-//         onClick={onRegister}
-//       >
-//         Register Now
-//       </Button>
-//     </Box>
-//   );
-// }
-
-// export default LandingPage;

@@ -80,11 +80,11 @@ function FeaturedGallery() {
       </Typography>
       <Slider {...settings}>
         {featuredImages.map((item, index) => (
-          <Box key={index} sx={{ px: 2 }}> {/* Added spacing here */}
+          <Box key={index} sx={{ px: 2 }}>
             <Card
               sx={{
-                margin: "0 auto", // Centers the cards
-                maxWidth: 300, // Restricts card width for consistency
+                margin: "0 auto",
+                maxWidth: 300,
               }}
             >
               <CardMedia
