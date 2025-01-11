@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography, List, ListItem, ListItemText, Container } from "@mui/material";
 import Comments from "../components/Home/Comments";
+import UpComingEvents from "../components/Events/UpComingEvents";
+import LatestEvents from "../components/Events/LatestEvents";
 
 function EventsPage() {
   const events = [
@@ -11,9 +13,14 @@ function EventsPage() {
 
   return (
     <Container>
+
+      <UpComingEvents />
+
+      <LatestEvents />
+      
       <Box>
       <Typography variant="h4" gutterBottom>
-        Upcoming Events
+        Other Events
       </Typography>
       <List>
         {events.map((event, index) => (

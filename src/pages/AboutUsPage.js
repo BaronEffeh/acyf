@@ -1,12 +1,18 @@
 import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import AboutUsIntro from "../components/AboutUs/AboutUsIntro";
+import VisionMission from "../components/AboutUs/VisionMission";
+import AboutUsOverview from "../components/AboutUs/AboutUsOverview";
 
 function AboutUsPage() {
   return (
     <>
       <AboutUsIntro />
     <Container>
+
+      <AboutUsOverview />
+
+      <VisionMission />
 
       <Typography variant="h4" gutterBottom>
         About Us

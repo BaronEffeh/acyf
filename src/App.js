@@ -18,6 +18,9 @@ import { teamMembers } from "./assets/teamImgs/teamMembers";
 import Registration from "./pages/Registration";
 import Donate from "./pages/Donate";
 import JoinUs from "./pages/JoinUs";
+import UpComingEvents from "./components/Events/UpComingEvents";
+import LatestEvents from "./components/Events/LatestEvents";
+import DetailedEventPage from "./components/Events/DetailedEventPage";
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
         <Route path="/our-team" element={<OurTeam teamMembers={teamMembers} />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/join-us" element={<JoinUs />} />
+        <Route path="/upcoming-events" element={<UpComingEvents />} />
+        <Route path="/latest-events" element={<LatestEvents />} />
+        <Route path="/events/:eventId" element={<DetailedEventPage />} />
       </Routes>
       <Footer />
     </Router>

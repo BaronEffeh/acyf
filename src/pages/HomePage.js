@@ -7,6 +7,7 @@ import Highlights from "../components/Home/Highlights";
 import Intro from "../components/Home/Intro";
 import FeaturedGallery from "../components/Home/FeaturedGallery";
 import HomeOverview from "../components/Home/HomeOverview";
+import Newsletter from "../components/Home/Newsletter";
 
 function HomePage() {
   return (
@@ -27,6 +28,8 @@ function HomePage() {
       <Review />
 
     </Container>
+
+    <Newsletter />
     </>
   );
 }
