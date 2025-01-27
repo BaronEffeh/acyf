@@ -8,6 +8,7 @@ import Intro from "../components/Home/Intro";
 import FeaturedGallery from "../components/Home/FeaturedGallery";
 import HomeOverview from "../components/Home/HomeOverview";
 import Newsletter from "../components/Home/Newsletter";
+import UpComingEvents from "../components/Events/UpComingEvents";
 
 function HomePage() {
   return (
@@ -24,6 +25,8 @@ function HomePage() {
       <Milestone />
 
       <OurTeam />
+
+      <UpComingEvents />
 
       <Review />
 

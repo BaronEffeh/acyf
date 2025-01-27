@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Box, Typography, Grid, Card, CardMedia, CardContent, Paper } from "@mui/material";
+import { Box, Typography, Grid, Card, CardMedia, CardContent, Paper, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import eventsData from "../../assets/data/eventsData";
+import Comments from "../Home/Comments";
 
 function DetailedEventPage() {
   const { eventId } = useParams();
@@ -13,6 +15,12 @@ function DetailedEventPage() {
         <Typography variant="h6" color="error">
           Event not found!
         </Typography>
+        <Typography>
+          Sorry, the event you're looking for has either been removed or does not exist.
+        </Typography>
+        <Button component={Link} to="/events" variant="outlined" sx={{ m: 2 }}>
+          Back to Events
+        </Button>
       </Box>
     );
   }
@@ -55,8 +63,11 @@ function DetailedEventPage() {
             color: "#fff",
           }}
         >
-          <Typography variant="h3" sx={{ fontWeight: "bold", textShadow: "2px 2px 5px rgba(0,0,0,0.8)" }}>
+          <Typography variant="h3" sx={{ fontWeight: "bold", textShadow: "2px 2px 5px rgba(0,0,0,0.8)", textAlign: "center" }}>
             {event.title}
+          </Typography>
+          <Typography variant="subtitle1" sx={{ mt: 1, fontWeight: "bold", textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
+            {event.host}
           </Typography>
           <Typography variant="subtitle1" sx={{ mt: 1, textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
             {event.date}
@@ -105,20 +116,40 @@ function DetailedEventPage() {
                 Event Details
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                <strong>Date:</strong> {event.date}
+                <strong>{event.title}</strong> 
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                <strong>Theme:</strong> {event.theme}
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
                 <strong>Host:</strong> {event.host}
               </Typography>
               <Typography variant="body2" sx={{ mb: 1 }}>
-                <strong>Theme:</strong> {event.theme}
+                <strong>Date:</strong> {event.date}
               </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                <strong>Time:</strong> {event.time}
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1 }}>
+                <strong>Venue:</strong> {event.venue}
+              </Typography>
+              
+              
             </CardContent>
           </Card>
         </Grid>
       </Grid>
       <Box sx={{mt: 4, alignContent: "center", alignItems: "center"}}>
-        <img src={event.image} alt={event.title} style={{ width: "250px", marginBottom: "16px" }} />
+      <Grid container spacing={4}>
+        {/* Event Flyer */}
+      <Grid item xs={12} md={4}>
+      <img src={event.image} alt={event.title} style={{ width: "250px" }} />
+      </Grid>
+      {/* Event Comments */}
+      <Grid item xs={12} md={8}>
+        <Comments />
+      </Grid>
+      </Grid>
         </Box>
     </Box>
   );
