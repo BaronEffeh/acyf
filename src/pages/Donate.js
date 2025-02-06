@@ -167,7 +167,7 @@ function Donate() {
                 color="primary"
                 onClick={handleCheckout}
               >
-                Go to checkout
+                Donate
               </Button>
             </Box>
           </Box>
